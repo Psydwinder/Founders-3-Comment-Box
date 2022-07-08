@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Comment Box</title>
+  </head>
+  <body>
+    <form id="survey-form" onsubmit="return false">
+      <h1 id="title">Leave your comments!</h1>
+      <p id="description">Let us know what you think of the comment system.</p>
+      <fieldset>
+        <label id="name-label"
+          >Enter Your Name:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="John Doe"
+        /></label>
+        <label id="email-label"
+          >Enter Your Email:<input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="john.doe@email.com"
+        /></label>
+        <label
+          >Comment:
+          <textarea
+            id="comment"
+            name="extra"
+            rows="10"
+            cols="30"
+            placeholder="I really like the system..."
+          ></textarea>
+          <span id="warning"></span>
+          <span id="charCount">140/140</span>
+        </label>
+      </fieldset>
+      <input id="submit" type="button" value="Submit" />
+      
+      <div class="display_comment">
+        <h3>Comments</h3>
+        <div class="comment_parent">
+          <div class="comment1">
+            <p id="comment1"></p>
+          </div>
+          <div class="comment_meta">
+            <div class="meta_date_author">
+              <span class="author_name" id="meta_author"></span>
+              <span class="author_email" id="meta_email"></span>
+            </div>
+          </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
