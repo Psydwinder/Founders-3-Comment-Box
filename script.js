@@ -45,9 +45,9 @@ const submit = document.getElementById("submit");
 submit.addEventListener("click", myFunction);
 // submit returns:
 
-var input = document.getElementById("submit");
-var name2 = document.getElementById("name");
-var email = document.getElementById("email");
+let input = document.getElementById("submit");
+let name2 = document.getElementById("name");
+let email = document.getElementById("email");
 
 function alertBox() {
   alert("Please Complete Form");
